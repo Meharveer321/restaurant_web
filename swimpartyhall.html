@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>swim & party</title>
+<style>
+.column{
+    float:left;
+    width:50%;
+    background-color: black;
+    color:bisque;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align:center;
+    padding-bottom: 50px;
+    padding-top:20px;
+}
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.colu{
+    color:chocolate;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align:center;
+    padding-bottom: 50px;
+    padding-top:20px;
+}
+.trans{
+    height: 500px;width:500px;
+    padding-left:200px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:500px;
+    animation-name:image;
+    animation-duration: 30s;
+    animation-iteration-count:infinite;
+}
+@keyframes image{
+    0% {background-image:url("swimming pool.jpg")}
+    50% {background-image: url("swim2.jpg")}
+    100% {background-image: url("swim1.jpg")}
+}
+.trans1{
+    height: 500px;width:500px;
+    padding-left:1800px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:500px;
+    animation-name:banquet;
+    animation-duration: 30s;
+    animation-iteration-count:infinite;
+}
+@keyframes banquet{
+    0% {background-image:url("partyhall.jpg")}
+    50% {background-image: url("banquet1.jpg")}
+    100% {background-image: url("banquet2.jpg")}
+}
+</style>
+</head>
+<body>
+<div class="row">
+    <div class="column">
+    <h1 align="center"><em>Swimming Pool</em></h1>
+         <div class="trans">
+         </div>
+    
+    <div style="text-align:center;border:2px;border-color: aliceblue;border-radius: 25px;border-style:ridge;width: fit-content;color: aliceblue;border: padding left 50px;">
+      only for Rs.<b>999</b> per head
+    </div>
+    
+    </div>
+    <div class="colu">
+    <h1><em>Party Hall</em></h1>
+        <div class="trans1"></div>
+    <div style="text-align:center;border:2px;border-color:black;border-radius: 25px;border-style:ridge;padding-left: 400px;color:black;align-self: center ;">
+            only for Rs.<b>30,000</b> per booking
+            <br>with advance payment of Rs.15,000 only
+    </div>
+</div>
+</div>
+</body>
+</html>
